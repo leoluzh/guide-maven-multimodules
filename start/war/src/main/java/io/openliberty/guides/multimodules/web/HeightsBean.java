@@ -45,18 +45,14 @@ public class HeightsBean implements java.io.Serializable {
     // Need an input as placeholder, you can choose not to use the input
     public void setHeightFeet(String heightfeet) {
         this.cm = Integer.valueOf(heightCm);
-        // tag::dependency-code1[]
-        // TO-DO: ADD THE getFeet CODE SNIPPET HERE
-        // end::dependency-code1[]
+        this.feet = io.openliberty.guides.multimodules.lib.Converter.getFeet(cm);
         String result = String.valueOf(feet);
         this.heightFeet = result;
     }
 
     public void setHeightInches(String heightinches) {
         this.cm = Integer.valueOf(heightCm);
-        // tag::dependency-code2[]
-        // TO-DO: ADD THE getInches CODE SNIPPET HERE
-        // end::dependency-code2[]
+        this.inches = io.openliberty.guides.multimodules.lib.Converter.getInches(cm);
         String result = String.valueOf(inches);
         this.heightInches = result;
     }

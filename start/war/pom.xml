@@ -43,9 +43,11 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- tag::dependency[] -->
-        <!-- TO-DO: ADD THE DEPENDENCY CONFIGURATION HERE -->
-        <!-- end::dependency[] -->
+		<dependency>
+			<groupId>io.openliberty.guides</groupId>
+			<artifactId>guide-maven-multimodules-jar</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
 
     </dependencies>
 
